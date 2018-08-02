@@ -75,7 +75,6 @@ header {
   header nav {
     position: absolute;
     width: 100%;
-    padding: 2rem;
     background-image: url("../img/dott.png"); }
     header nav ul {
       display: flex;
@@ -84,29 +83,19 @@ header {
         position: relative;
         display: block;
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         font-size: 2rem;
         letter-spacing: .3rem;
         color: #eff0f3;
         text-decoration: none; }
-        header nav ul li a::before, header nav ul li a::after {
-          content: '';
-          display: block;
-          height: .2rem;
-          width: 100%;
-          background-color: white;
-          position: absolute;
-          bottom: 0;
-          left: 0; }
-        header nav ul li a::after {
-          content: '';
-          display: block;
-          width: 0%;
-          background-color: #5896a8;
-          transition: all .5s ease; }
-        header nav ul li a:hover::after {
-          width: 100%; }
+        header nav ul li a i {
+          color: rgba(0, 0, 0, 0); }
+        header nav ul li a:hover {
+          color: #004674;
+          background-color: #eff0f3; }
+          header nav ul li a:hover i {
+            color: #004674; }
   header h1 {
     position: absolute;
     width: 60%;
